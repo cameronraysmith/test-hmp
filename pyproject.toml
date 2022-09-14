@@ -44,6 +44,7 @@ sphinx-click = ">=3.0.2"
 typeguard = ">=2.13.3"
 xdoctest = {extras = ["colors"], version = ">=0.15.10"}
 myst-parser = {version = ">=0.16.1"}
+dparse = ">=0.5.2"
 
 [tool.poetry.scripts]
 test-hm-python = "test_hm_python.__main__:main"
