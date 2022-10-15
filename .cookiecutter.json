@@ -5,10 +5,10 @@
   "copyright_year": "2022",
   "development_status": "Development Status :: 1 - Planning",
   "email": "mail@cameronraysmith.net",
-  "friendly_name": "Test Hm Python",
+  "friendly_name": "Test Hypermodern Python",
   "github_user": "cameronraysmith",
   "license": "MIT",
-  "package_name": "test_hm_python",
-  "project_name": "test-hm-python",
+  "package_name": "test_hmp",
+  "project_name": "test-hmp",
   "version": "0.0.0"
 }

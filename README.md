@@ -1,23 +1,23 @@
-# Test Hm Python
+# Test Hypermodern Python
 
-[![PyPI](https://img.shields.io/pypi/v/test-hm-python.svg)][pypi_]
-[![Status](https://img.shields.io/pypi/status/test-hm-python.svg)][status]
-[![Python Version](https://img.shields.io/pypi/pyversions/test-hm-python)][python version]
-[![License](https://img.shields.io/pypi/l/test-hm-python)][license]
+[![PyPI](https://img.shields.io/pypi/v/test-hmp.svg)][pypi_]
+[![Status](https://img.shields.io/pypi/status/test-hmp.svg)][status]
+[![Python Version](https://img.shields.io/pypi/pyversions/test-hmp)][python version]
+[![License](https://img.shields.io/pypi/l/test-hmp)][license]
 
-[![Read the documentation at https://test-hm-python.readthedocs.io/](https://img.shields.io/readthedocs/test-hm-python/latest.svg?label=Read%20the%20Docs)][read the docs]
-[![Tests](https://github.com/cameronraysmith/test-hm-python/workflows/Tests/badge.svg)][tests]
-[![Codecov](https://codecov.io/gh/cameronraysmith/test-hm-python/branch/main/graph/badge.svg)][codecov]
+[![Read the documentation at https://test-hmp.readthedocs.io/](https://img.shields.io/readthedocs/test-hmp/latest.svg?label=Read%20the%20Docs)][read the docs]
+[![Tests](https://github.com/cameronraysmith/test-hmp/workflows/Tests/badge.svg)][tests]
+[![Codecov](https://codecov.io/gh/cameronraysmith/test-hmp/branch/main/graph/badge.svg)][codecov]
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
 [![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
 
-[pypi_]: https://pypi.org/project/test-hm-python/
-[status]: https://pypi.org/project/test-hm-python/
-[python version]: https://pypi.org/project/test-hm-python
-[read the docs]: https://test-hm-python.readthedocs.io/
-[tests]: https://github.com/cameronraysmith/test-hm-python/actions?workflow=Tests
-[codecov]: https://app.codecov.io/gh/cameronraysmith/test-hm-python
+[pypi_]: https://pypi.org/project/test-hmp/
+[status]: https://pypi.org/project/test-hmp/
+[python version]: https://pypi.org/project/test-hmp
+[read the docs]: https://test-hmp.readthedocs.io/
+[tests]: https://github.com/cameronraysmith/test-hmp/actions?workflow=Tests
+[codecov]: https://app.codecov.io/gh/cameronraysmith/test-hmp
 [pre-commit]: https://github.com/pre-commit/pre-commit
 [black]: https://github.com/psf/black
 
@@ -31,10 +31,10 @@
 
 ## Installation
 
-You can install _Test Hm Python_ via [pip] from [PyPI]:
+You can install _Test Hypermodern Python_ via [pip] from [PyPI]:
 
 ```console
-$ pip install test-hm-python
+$ pip install test-hmp
 ```
 
 ## Usage
@@ -49,7 +49,7 @@ To learn more, see the [Contributor Guide].
 ## License
 
 Distributed under the terms of the [MIT license][license],
-_Test Hm Python_ is free and open source software.
+_Test Hypermodern Python_ is free and open source software.
 
 ## Issues
 
@@ -63,11 +63,11 @@ This project was generated from [@cjolowicz]'s [Hypermodern Python Cookiecutter]
 [@cjolowicz]: https://github.com/cjolowicz
 [pypi]: https://pypi.org/
 [hypermodern python cookiecutter]: https://github.com/cjolowicz/cookiecutter-hypermodern-python
-[file an issue]: https://github.com/cameronraysmith/test-hm-python/issues
+[file an issue]: https://github.com/cameronraysmith/test-hmp/issues
 [pip]: https://pip.pypa.io/
 
 <!-- github-only -->
 
-[license]: https://github.com/cameronraysmith/test-hm-python/blob/main/LICENSE
-[contributor guide]: https://github.com/cameronraysmith/test-hm-python/blob/main/CONTRIBUTING.md
-[command-line reference]: https://test-hm-python.readthedocs.io/en/latest/usage.html
+[license]: https://github.com/cameronraysmith/test-hmp/blob/main/LICENSE
+[contributor guide]: https://github.com/cameronraysmith/test-hmp/blob/main/CONTRIBUTING.md
+[command-line reference]: https://test-hmp.readthedocs.io/en/latest/usage.html

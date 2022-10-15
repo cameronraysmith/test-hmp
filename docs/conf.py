@@ -1,5 +1,5 @@
 """Sphinx configuration."""
-project = "Test Hm Python"
+project = "Test Hypermodern Python"
 author = "Cameron Smith"
 copyright = "2022, Cameron Smith"
 extensions = [
