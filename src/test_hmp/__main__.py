@@ -14,7 +14,7 @@ API_URL = "https://en.wikipedia.org/api/rest_v1/page/random/summary"
 @click.command()
 @click.version_option(version=__version__)
 def main() -> None:
-    """Test Hm Python."""
+    """Test Hypermodern Python."""
     with requests.get(API_URL) as response:
         response.raise_for_status()
         data = response.json()
@@ -27,4 +27,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main(prog_name="test-hm-python")  # pragma: no cover
+    main(prog_name="test-hmp")  # pragma: no cover

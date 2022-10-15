@@ -1,1 +1,1 @@
-"""Test suite for the test_hm_python package."""
+"""Test suite for the test_hmp package."""

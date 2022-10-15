@@ -1,19 +1,19 @@
 [tool.poetry]
-name = "test-hm-python"
+name = "test-hmp"
 version = "0.0.0"
-description = "Test Hm Python"
+description = "Test Hypermodern Python"
 authors = ["Cameron Smith <mail@cameronraysmith.net>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/cameronraysmith/test-hm-python"
-repository = "https://github.com/cameronraysmith/test-hm-python"
-documentation = "https://test-hm-python.readthedocs.io"
+homepage = "https://github.com/cameronraysmith/test-hmp"
+repository = "https://github.com/cameronraysmith/test-hmp"
+documentation = "https://test-hmp.readthedocs.io"
 classifiers = [
     "Development Status :: 1 - Planning",
 ]
 
 [tool.poetry.urls]
-Changelog = "https://github.com/cameronraysmith/test-hm-python/releases"
+Changelog = "https://github.com/cameronraysmith/test-hmp/releases"
 
 [tool.poetry.dependencies]
 python = "^3.7"
@@ -48,7 +48,7 @@ myst-parser = {version = ">=0.16.1"}
 dparse = ">=0.5.2"
 
 [tool.poetry.scripts]
-test-hm-python = "test_hm_python.__main__:main"
+test-hmp = "test_hmp.__main__:main"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
@@ -56,7 +56,7 @@ tests = ["tests", "*/tests"]
 
 [tool.coverage.run]
 branch = true
-source = ["test_hm_python", "tests"]
+source = ["test_hmp", "tests"]
 
 [tool.coverage.report]
 show_missing = true
