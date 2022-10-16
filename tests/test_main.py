@@ -2,6 +2,7 @@
 from unittest.mock import Mock
 
 import pytest
+import requests
 from click.testing import CliRunner
 from pytest_mock import MockFixture
 
@@ -55,3 +56,12 @@ def test_main_fails_on_request_error(runner, mock_requests_get):
     mock_requests_get.side_effect = Exception("Boom")
     result = runner.invoke(__main__.main)
     assert result.exit_code == 1
+
+
+def test_main_prints_message_on_request_error(
+    runner: CliRunner, mock_requests_get: Mock
+) -> None:
+    """It prints an error message if the request fails."""
+    mock_requests_get.side_effect = requests.RequestException
+    result = runner.invoke(__main__.main)
+    assert "Error" in result.output
