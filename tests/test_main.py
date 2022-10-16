@@ -35,3 +35,9 @@ def test_main_invokes_requests_get(runner, mock_requests_get: Mock) -> None:
     """It invokes requests.get."""
     runner.invoke(__main__.main)
     assert mock_requests_get.called
+
+
+def test_main_prints_title(runner, mock_requests_get: Mock) -> None:
+    """It prints the title of the Wikipedia page."""
+    result = runner.invoke(__main__.main)
+    assert "Lorem Ipsum" in result.output
