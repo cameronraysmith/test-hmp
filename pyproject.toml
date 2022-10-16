@@ -46,6 +46,8 @@ typeguard = ">=2.13.3"
 xdoctest = {extras = ["colors"], version = ">=0.15.10"}
 myst-parser = {version = ">=0.16.1"}
 dparse = ">=0.5.2"
+pytest-cov = "^4.0.0"
+pytest-mock = "^3.10.0"
 
 [tool.poetry.scripts]
 test-hmp = "test_hmp.__main__:main"
@@ -60,7 +62,7 @@ source = ["test_hmp", "tests"]
 
 [tool.coverage.report]
 show_missing = true
-fail_under = 100
+#fail_under = 100
 
 [tool.isort]
 profile = "black"
