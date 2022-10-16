@@ -4,6 +4,7 @@ from unittest.mock import Mock
 import pytest
 import requests
 from click.testing import CliRunner
+from pytest_mock import MockFixture
 
 from test_hmp import __main__
 
@@ -12,6 +13,12 @@ from test_hmp import __main__
 def runner() -> CliRunner:
     """Fixture for invoking command-line interfaces."""
     return CliRunner()
+
+
+@pytest.fixture
+def mock_wikipedia_random_page(mocker: MockFixture) -> Mock:
+    """Fixture for mocking wikipedia.random_page."""
+    return mocker.patch("test_hmp.wikipedia.random_page")
 
 
 def test_main_succeeds(runner: CliRunner, mock_requests_get: Mock) -> None:
