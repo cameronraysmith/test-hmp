@@ -60,3 +60,11 @@ def test_main_prints_message_on_request_error(
     mock_requests_get.side_effect = requests.RequestException
     result = runner.invoke(__main__.main)
     assert "Error" in result.output
+
+
+def test_main_uses_specified_language(
+    runner: CliRunner, mock_wikipedia_random_page: Mock
+) -> None:
+    """It uses the specified language edition of Wikipedia."""
+    runner.invoke(__main__.main, ["--language=pl"])
+    mock_wikipedia_random_page.assert_called_with(language="pl")
