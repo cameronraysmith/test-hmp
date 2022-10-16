@@ -41,3 +41,10 @@ def test_main_prints_title(runner, mock_requests_get: Mock) -> None:
     """It prints the title of the Wikipedia page."""
     result = runner.invoke(__main__.main)
     assert "Lorem Ipsum" in result.output
+
+
+def test_main_uses_en_wikipedia_org(runner, mock_requests_get):
+    """It uses the English Wikipedia by default."""
+    runner.invoke(__main__.main)
+    args, _ = mock_requests_get.call_args
+    assert "en.wikipedia.org" in args[0]
