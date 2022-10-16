@@ -4,7 +4,6 @@ from unittest.mock import Mock
 import pytest
 import requests
 from click.testing import CliRunner
-from pytest_mock import MockFixture
 
 from test_hmp import __main__
 
@@ -13,17 +12,6 @@ from test_hmp import __main__
 def runner() -> CliRunner:
     """Fixture for invoking command-line interfaces."""
     return CliRunner()
-
-
-@pytest.fixture
-def mock_requests_get(mocker: MockFixture) -> Mock:
-    """Fixture for mocking requests.get."""
-    mock = mocker.patch("requests.get")
-    mock.return_value.__enter__.return_value.json.return_value = {
-        "title": "Lorem Ipsum",
-        "extract": "Lorem ipsum dolor sit amet",
-    }
-    return mock
 
 
 def test_main_succeeds(runner: CliRunner, mock_requests_get: Mock) -> None:
