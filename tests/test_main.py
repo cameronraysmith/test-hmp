@@ -29,3 +29,9 @@ def test_main_succeeds(runner: CliRunner, mock_requests_get: Mock) -> None:
     """It exits with a status code of zero."""
     result = runner.invoke(__main__.main)
     assert result.exit_code == 0
+
+
+def test_main_invokes_requests_get(runner, mock_requests_get: Mock) -> None:
+    """It invokes requests.get."""
+    runner.invoke(__main__.main)
+    assert mock_requests_get.called
