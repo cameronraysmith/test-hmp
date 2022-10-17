@@ -1,7 +1,7 @@
 # Usage
 
 ```{eval-rst}
-.. click:: test_hm_python.__main__:main
-    :prog: test-hm-python
+.. click:: test_hmp.__main__:main
+    :prog: test-hmp
     :nested: full
 ```

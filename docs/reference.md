@@ -1,8 +1,8 @@
 # Reference
 
-## test_hm_python
+## test_hmp
 
 ```{eval-rst}
-.. automodule:: test_hm_python
+.. automodule:: test_hmp
    :members:
 ```

@@ -19,5 +19,5 @@ reference
 contributing
 Code of Conduct <codeofconduct>
 License <license>
-Changelog <https://github.com/cameronraysmith/test-hm-python/releases>
+Changelog <https://github.com/cameronraysmith/test-hmp/releases>
 ```
