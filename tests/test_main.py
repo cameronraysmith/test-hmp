@@ -27,6 +27,13 @@ def test_main_succeeds(runner: CliRunner, mock_requests_get: Mock) -> None:
     assert result.exit_code == 0
 
 
+@pytest.mark.e2e
+def test_main_succeeds_in_production_env(runner: CliRunner) -> None:
+    """It exits with a status code of zero (end-to-end)."""
+    result = runner.invoke(__main__.main)
+    assert result.exit_code == 0
+
+
 def test_main_invokes_requests_get(runner: CliRunner, mock_requests_get: Mock) -> None:
     """It invokes requests.get."""
     runner.invoke(__main__.main)
